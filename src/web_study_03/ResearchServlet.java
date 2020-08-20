@@ -1,6 +1,7 @@
 package web_study_03;
 
 import java.io.IOException;
+import java.net.URLEncoder;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
@@ -40,6 +41,7 @@ public class ResearchServlet extends HttpServlet {
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("researchResult.jsp");
 		dispatcher.forward(request, response);
+//		response.sendRedirect("researchResult.jsp?name=" + name + "&gender" + gender + "&season" + arrSeason);
 	}
 
 }
